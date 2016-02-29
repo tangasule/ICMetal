@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+#frame .frame2 {
+	background-color: #CCC;
+}
+#frame .frame2 h1 {
+	padding: 0px;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	color: #000;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+#frame .frame2 #form1 {
+	width: 420px;
+	height: 400px;
+}
+#frame .frame2 #form1 label #name {
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 360px;
+	height: 35px;
+	font-size: 18px;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#frame .frame2 #form1 label #email {
+	height: 35px;
+	width: 360px;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 18px;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#frame .frame2 #form1 label #subject {
+	height: 35px;
+	width: 360px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-left: 30px;
+	font-size: 18px;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#frame .frame2 #form1 label #message {
+	height: 150px;
+	width: 360px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-left: 30px;
+	font-size: 18px;
+	padding: 0px;
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#frame .frame2 #form1 label #send {
+	width: 80px;
+	height: 50px;
+	margin-top: 5px;
+	float: right;
+	margin-right: 30px;
+	background-color: #666666;
+	color: #FFF;
+	font-size: 18px;
+}
+#frame .frame3 {
+	background-color: #CCC;
+}
+#frame .frame3 h1 {
+	font-size: 36px;
+	font-family: "Times New Roman", Times, serif;
+	padding: 0px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 30px;
+	color: #000;
+}
+#frame .frame3 p {
+	margin-left: 30px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+#frame .frame3 h1 iframe {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+
+
+#frame .frame1 .contact_pic .pic {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 280px;
+	height: 315px;
+	background-image: url(/static/Images/templatemo_contact1.jpg);
+}
+
+#frame .frame1 .contact_pic .pic .goback {
+	margin-top: 330px;
+}

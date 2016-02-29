@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+
+
+#frame .frame1 .contact_pic .pic {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 280px;
+	height: 315px;
+	background-image: url(/static/Images/templatemo_contact1.jpg);
+}
+
+#frame .frame1 .contact_pic .pic .goback {
+	margin-top: 330px;
+}
+#frame .frame3 {
+	background-image: url(/static/Images/dajfipsdfayfa9.png);
+
+}
+
+#frame .frame3 h1 {
+	font-size: 36px;
+	font-family: "Times New Roman", Times, serif;
+	padding: 0px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 30px;
+	color: #000;
+}
+#frame .frame3 p {
+	margin-left: 30px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+#frame .frame3 h1 iframe {
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+
+/* CSS Document */
+
+#frame .frame2 {
+	background-color: #CCC;
+	width: 420px;
+}
+#frame .frame2 h1 {
+	padding: 0px;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	color: #000;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+#frame .frame2 #form1 {
+	width: 420px;
+	height: 400px;
+}
+
+#frame .frame2 #form1 p {
+	font-size: 18px;
+	margin-left: 30px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+}
+#frame .frame2 #form1 table {
+	font-size: 18px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 35px;
+	line-height: 35px;
+}
+#frame .frame2 #form1 table tr td #material {
+	width: 100px;
+	font-size: 18px;
+}
+#frame .frame2 #form1 table tr td #state {
+	font-size: 18px;
+	width: 100px;
+}
+#frame .frame2 #form1 table tr td #total_strain {
+	font-size: 18px;
+	width: 100px;
+}
+#frame .frame2 #form1 table tr td #speed {
+	font-size: 18px;
+	width: 100px;
+}
+#frame .frame2 #form1 table tr td #upload {
+	width: 50px;
+	font-size: 18px;
+}
+#frame .frame2 #form1 table tr td #cutoff_strain {
+	font-size: 18px;
+	width: 100px;
+}
+
+#frame .frame2 #form1 table tr td #calculate_object {
+	font-size: 18px;
+	width: 100px;
+}
+
+#frame .frame2 #form1 #submit {
+	margin-top: 20px;
+	margin-left: 280px;
+	height: 50px;
+	width: 80px;
+	background-color: #666666;
+	font-size: 18px;
+	color: #FFF;
+}
