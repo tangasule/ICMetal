@@ -44,7 +44,7 @@
                     <td><input type="text" name="state" id="state" /></td>
                 </tr>
                 <tr>
-                    <td width="250">Total strain </td>
+                    <td width="250">Total strain</td>
                     <td><input type="text" name="total_strain" id="total_strain" /></td>
                 </tr>
                 <tr>
