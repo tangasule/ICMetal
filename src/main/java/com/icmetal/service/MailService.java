@@ -1,4 +1,4 @@
-package com.springapp.service;
+package com.icmetal.service;
 
 /**
  * Created by tangshijun on 16/2/22.

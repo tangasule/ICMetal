@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icmetal.dao.mybatis.mapper.ToollifeDetailMapper">
+  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.ToollifeDetail">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="material" jdbcType="VARCHAR" property="material" />
+    <result column="calculate" jdbcType="VARCHAR" property="calculate" />
+    <result column="no_state" jdbcType="VARCHAR" property="noState" />
+    <result column="total_strain" jdbcType="VARCHAR" property="totalStrain" />
+    <result column="stamping_speed" jdbcType="VARCHAR" property="stampingSpeed" />
+    <result column="friction_coefficient" jdbcType="VARCHAR" property="frictionCoefficient" />
+    <result column="upload" jdbcType="VARCHAR" property="upload" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, material, calculate, no_state, total_strain, stamping_speed, friction_coefficient, 
+    upload
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ic_toollife
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ic_toollife
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    insert into ic_toollife (id, material, calculate, 
+      no_state, total_strain, stamping_speed, 
+      friction_coefficient, upload)
+    values (#{id,jdbcType=BIGINT}, #{material,jdbcType=VARCHAR}, #{calculate,jdbcType=VARCHAR}, 
+      #{noState,jdbcType=VARCHAR}, #{totalStrain,jdbcType=VARCHAR}, #{stampingSpeed,jdbcType=VARCHAR}, 
+      #{frictionCoefficient,jdbcType=VARCHAR}, #{upload,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    insert into ic_toollife
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="material != null">
+        material,
+      </if>
+      <if test="calculate != null">
+        calculate,
+      </if>
+      <if test="noState != null">
+        no_state,
+      </if>
+      <if test="totalStrain != null">
+        total_strain,
+      </if>
+      <if test="stampingSpeed != null">
+        stamping_speed,
+      </if>
+      <if test="frictionCoefficient != null">
+        friction_coefficient,
+      </if>
+      <if test="upload != null">
+        upload,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="material != null">
+        #{material,jdbcType=VARCHAR},
+      </if>
+      <if test="calculate != null">
+        #{calculate,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null">
+        #{noState,jdbcType=VARCHAR},
+      </if>
+      <if test="totalStrain != null">
+        #{totalStrain,jdbcType=VARCHAR},
+      </if>
+      <if test="stampingSpeed != null">
+        #{stampingSpeed,jdbcType=VARCHAR},
+      </if>
+      <if test="frictionCoefficient != null">
+        #{frictionCoefficient,jdbcType=VARCHAR},
+      </if>
+      <if test="upload != null">
+        #{upload,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    update ic_toollife
+    <set>
+      <if test="material != null">
+        material = #{material,jdbcType=VARCHAR},
+      </if>
+      <if test="calculate != null">
+        calculate = #{calculate,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null">
+        no_state = #{noState,jdbcType=VARCHAR},
+      </if>
+      <if test="totalStrain != null">
+        total_strain = #{totalStrain,jdbcType=VARCHAR},
+      </if>
+      <if test="stampingSpeed != null">
+        stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
+      </if>
+      <if test="frictionCoefficient != null">
+        friction_coefficient = #{frictionCoefficient,jdbcType=VARCHAR},
+      </if>
+      <if test="upload != null">
+        upload = #{upload,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    update ic_toollife
+    set material = #{material,jdbcType=VARCHAR},
+      calculate = #{calculate,jdbcType=VARCHAR},
+      no_state = #{noState,jdbcType=VARCHAR},
+      total_strain = #{totalStrain,jdbcType=VARCHAR},
+      stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
+      friction_coefficient = #{frictionCoefficient,jdbcType=VARCHAR},
+      upload = #{upload,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.ToollifeDetail">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="material" jdbcType="VARCHAR" property="material" />
+    <result column="calculate" jdbcType="VARCHAR" property="calculate" />
+    <result column="no_state" jdbcType="VARCHAR" property="noState" />
+    <result column="total_strain" jdbcType="VARCHAR" property="totalStrain" />
+    <result column="stamping_speed" jdbcType="VARCHAR" property="stampingSpeed" />
+    <result column="friction_coefficient" jdbcType="VARCHAR" property="frictionCoefficient" />
+    <result column="upload" jdbcType="VARCHAR" property="upload" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, material, calculate, no_state, total_strain, stamping_speed, friction_coefficient, 
+    upload
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ic_toollife
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ic_toollife
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    insert into ic_toollife (id, material, calculate, 
+      no_state, total_strain, stamping_speed, 
+      friction_coefficient, upload)
+    values (#{id,jdbcType=BIGINT}, #{material,jdbcType=VARCHAR}, #{calculate,jdbcType=VARCHAR}, 
+      #{noState,jdbcType=VARCHAR}, #{totalStrain,jdbcType=VARCHAR}, #{stampingSpeed,jdbcType=VARCHAR}, 
+      #{frictionCoefficient,jdbcType=VARCHAR}, #{upload,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    insert into ic_toollife
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="material != null">
+        material,
+      </if>
+      <if test="calculate != null">
+        calculate,
+      </if>
+      <if test="noState != null">
+        no_state,
+      </if>
+      <if test="totalStrain != null">
+        total_strain,
+      </if>
+      <if test="stampingSpeed != null">
+        stamping_speed,
+      </if>
+      <if test="frictionCoefficient != null">
+        friction_coefficient,
+      </if>
+      <if test="upload != null">
+        upload,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="material != null">
+        #{material,jdbcType=VARCHAR},
+      </if>
+      <if test="calculate != null">
+        #{calculate,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null">
+        #{noState,jdbcType=VARCHAR},
+      </if>
+      <if test="totalStrain != null">
+        #{totalStrain,jdbcType=VARCHAR},
+      </if>
+      <if test="stampingSpeed != null">
+        #{stampingSpeed,jdbcType=VARCHAR},
+      </if>
+      <if test="frictionCoefficient != null">
+        #{frictionCoefficient,jdbcType=VARCHAR},
+      </if>
+      <if test="upload != null">
+        #{upload,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    update ic_toollife
+    <set>
+      <if test="material != null">
+        material = #{material,jdbcType=VARCHAR},
+      </if>
+      <if test="calculate != null">
+        calculate = #{calculate,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null">
+        no_state = #{noState,jdbcType=VARCHAR},
+      </if>
+      <if test="totalStrain != null">
+        total_strain = #{totalStrain,jdbcType=VARCHAR},
+      </if>
+      <if test="stampingSpeed != null">
+        stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
+      </if>
+      <if test="frictionCoefficient != null">
+        friction_coefficient = #{frictionCoefficient,jdbcType=VARCHAR},
+      </if>
+      <if test="upload != null">
+        upload = #{upload,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    update ic_toollife
+    set material = #{material,jdbcType=VARCHAR},
+      calculate = #{calculate,jdbcType=VARCHAR},
+      no_state = #{noState,jdbcType=VARCHAR},
+      total_strain = #{totalStrain,jdbcType=VARCHAR},
+      stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
+      friction_coefficient = #{frictionCoefficient,jdbcType=VARCHAR},
+      upload = #{upload,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.ToollifeDetail">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="material" jdbcType="VARCHAR" property="material" />
+    <result column="calculate" jdbcType="VARCHAR" property="calculate" />
+    <result column="no_state" jdbcType="VARCHAR" property="noState" />
+    <result column="total_strain" jdbcType="VARCHAR" property="totalStrain" />
+    <result column="stamping_speed" jdbcType="VARCHAR" property="stampingSpeed" />
+    <result column="friction_coefficient" jdbcType="VARCHAR" property="frictionCoefficient" />
+    <result column="upload" jdbcType="VARCHAR" property="upload" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, material, calculate, no_state, total_strain, stamping_speed, friction_coefficient, 
+    upload
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ic_toollife
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ic_toollife
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    insert into ic_toollife (id, material, calculate, 
+      no_state, total_strain, stamping_speed, 
+      friction_coefficient, upload)
+    values (#{id,jdbcType=BIGINT}, #{material,jdbcType=VARCHAR}, #{calculate,jdbcType=VARCHAR}, 
+      #{noState,jdbcType=VARCHAR}, #{totalStrain,jdbcType=VARCHAR}, #{stampingSpeed,jdbcType=VARCHAR}, 
+      #{frictionCoefficient,jdbcType=VARCHAR}, #{upload,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    insert into ic_toollife
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="material != null">
+        material,
+      </if>
+      <if test="calculate != null">
+        calculate,
+      </if>
+      <if test="noState != null">
+        no_state,
+      </if>
+      <if test="totalStrain != null">
+        total_strain,
+      </if>
+      <if test="stampingSpeed != null">
+        stamping_speed,
+      </if>
+      <if test="frictionCoefficient != null">
+        friction_coefficient,
+      </if>
+      <if test="upload != null">
+        upload,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="material != null">
+        #{material,jdbcType=VARCHAR},
+      </if>
+      <if test="calculate != null">
+        #{calculate,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null">
+        #{noState,jdbcType=VARCHAR},
+      </if>
+      <if test="totalStrain != null">
+        #{totalStrain,jdbcType=VARCHAR},
+      </if>
+      <if test="stampingSpeed != null">
+        #{stampingSpeed,jdbcType=VARCHAR},
+      </if>
+      <if test="frictionCoefficient != null">
+        #{frictionCoefficient,jdbcType=VARCHAR},
+      </if>
+      <if test="upload != null">
+        #{upload,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    update ic_toollife
+    <set>
+      <if test="material != null">
+        material = #{material,jdbcType=VARCHAR},
+      </if>
+      <if test="calculate != null">
+        calculate = #{calculate,jdbcType=VARCHAR},
+      </if>
+      <if test="noState != null">
+        no_state = #{noState,jdbcType=VARCHAR},
+      </if>
+      <if test="totalStrain != null">
+        total_strain = #{totalStrain,jdbcType=VARCHAR},
+      </if>
+      <if test="stampingSpeed != null">
+        stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
+      </if>
+      <if test="frictionCoefficient != null">
+        friction_coefficient = #{frictionCoefficient,jdbcType=VARCHAR},
+      </if>
+      <if test="upload != null">
+        upload = #{upload,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.ToollifeDetail">
+    update ic_toollife
+    set material = #{material,jdbcType=VARCHAR},
+      calculate = #{calculate,jdbcType=VARCHAR},
+      no_state = #{noState,jdbcType=VARCHAR},
+      total_strain = #{totalStrain,jdbcType=VARCHAR},
+      stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
+      friction_coefficient = #{frictionCoefficient,jdbcType=VARCHAR},
+      upload = #{upload,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
