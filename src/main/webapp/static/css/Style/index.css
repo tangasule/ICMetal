@@ -3,54 +3,54 @@
 
 /* CSS Document */
 body {
-    background-image: url(/static/Images/bg.jpg);
-    background-repeat: repeat-x;
-    background-color: #000;
-    margin: 0px;
-    padding: 0px;
+	background-image: url(../Images/bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #000;
+	margin: 0px;
+	padding: 0px;
 }
 #frame {
-    width: 1165px;
-    height: 1024px;
-    margin-right: auto;
-    margin-left: auto;
+	width: 1165px;
+	height: 1024px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #frame h1 {
-    padding-top: 60px;
-    color: #FFF;
-    font-family: Algerian;
-    padding-left: 30px;
-    padding-bottom: 0px;
-    font-size: 45px;
-    font-weight: normal;
+	padding-top: 60px;
+	color: #FFF;
+	font-family: Algerian;
+	padding-left: 30px;
+	padding-bottom: 0px;
+	font-size: 45px;
+	font-weight: normal;
 }
 #frame h1:hover {
-    color: #CFCFD7;
-    cursor: pointer;
+	color: #CFCFD7;
+	cursor: pointer;
 }
 #frame  p {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: #FFF;
-    font-size: 20px;
-    padding-top: 40px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    line-height: 20px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+	padding-top: 40px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	line-height: 20px;
 }
 
 
 
 #frame a {
-    text-decoration: none;
-    color: #FFF;
-    padding: 0px;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0px;
-    line-height: 30px;
+	text-decoration: none;
+	color: #FFF;
+	padding: 0px;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 30px;
 }
 
 
@@ -59,103 +59,103 @@ body {
 
 
 #frame a:hover {
-    color: #CFCFD7;
+	color: #CFCFD7;
 }
 
 #frame .frame1 {
-    height: 480px;
-    width: 280px;
-    float: left;
+	height: 480px;
+	width: 280px;
+	float: left;
 }
 #frame .frame1 .tailor {
-    height: 150px;
-    width: 280px;
-    background-color: #999933;
-    float: left;
+	height: 150px;
+	width: 280px;
+	background-color: #999933;
+	float: left;
 }
 
 #frame .frame1 .toolmaker {
-    height: 150px;
-    width: 280px;
-    float: left;
-    margin-top: 15px;
-    background-color: #DB6B39;
+	height: 150px;
+	width: 280px;
+	float: left;
+	margin-top: 15px;
+	background-color: #DB6B39;
 }
 #frame .frame1 .frame1_pic1 {
-    height: 150px;
-    width: 280px;
-    margin-top: 15px;
-    float: left;
-    background-image: url(/static/Images/pic2.jpg);
+	height: 150px;
+	width: 280px;
+	margin-top: 15px;
+	float: left;
+	background-image: url(../Images/d9b86795f9f8dfdc2d6eb8d053590cd2_%E5%89%AF%E6%9C%AC.jpg);
 }
 
 
 #frame .frame2 {
-    float: left;
-    height: 480px;
-    width: 280px;
-    margin-left: 15px;
+	float: left;
+	height: 480px;
+	width: 280px;
+	margin-left: 15px;
 }
 
 
 
 #frame .frame2 .pic1 {
-    height: 150px;
-    width: 280px;
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    background-image: url(/static/Images/pic1.jpg);
+	height: 150px;
+	width: 280px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	background-image: url(../Images/1df564c51a839b786f737b75d6f93924_%E5%89%AF%E6%9C%AC.jpg);
 }
 #frame .frame2 .toolife {
-    background-color: #5DD1C9;
-    float: left;
-    height: 150px;
-    width: 280px;
-    margin-top: 15px;
-    padding: 0px;
+	background-color: #5DD1C9;
+	float: left;
+	height: 150px;
+	width: 280px;
+	margin-top: 15px;
+	padding: 0px;
 }
 
 #frame .frame2 .FLD {
-    padding: 0px;
-    height: 150px;
-    width: 280px;
-    background-color: #933333;
-    float: left;
-    margin-top: 15px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+	padding: 0px;
+	height: 150px;
+	width: 280px;
+	background-color: #933333;
+	float: left;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
 }
 
 #frame .frame3 {
-    float: left;
-    height: 480px;
-    width: 280px;
-    margin-left: 15px;
+	float: left;
+	height: 480px;
+	width: 280px;
+	margin-left: 15px;
 }
 
 
 #frame .frame3 .strategy {
-    height: 150px;
-    width: 280px;
-    margin-top: 15px;
-    float: left;
-    background-color: #966;
+	height: 150px;
+	width: 280px;
+	margin-top: 15px;
+	float: left;
+	background-color: #966;
 }
 #frame .frame3 .strategy p {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 #frame .frame3 .technologies {
-    float: left;
-    height: 150px;
-    width: 280px;
-    margin: 0px;
-    padding: 0px;
-    background-color: #C918A1;
+	float: left;
+	height: 150px;
+	width: 280px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #C918A1;
 }
 #frame .frame3 .technologies p {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 
@@ -163,46 +163,46 @@ body {
 
 
 #frame .frame3 .pic1 {
-    height: 150px;
-    width: 280px;
-    margin-top: 15px;
-    float: left;
-    background-image: url(/static/Images/pic3.jpg);
-    background-repeat: no-repeat;
+	height: 150px;
+	width: 280px;
+	margin-top: 15px;
+	float: left;
+	background-image: url(../Images/d5a6beaab1094b32c69925db511b4f5a_%E5%89%AF%E6%9C%AC.jpg);
+	background-repeat: no-repeat;
 }
 
 #frame .frame4 {
-    float: left;
-    height: 480px;
-    width: 280px;
-    margin-left: 15px;
+	float: left;
+	height: 480px;
+	width: 280px;
+	margin-left: 15px;
 }
 
 #frame .frame4 .pic1 {
-    height: 150px;
-    width: 280px;
-    margin: 0px;
-    padding: 0px;
-    background-image: url(/static/Images/pic4.jpg);
-    float: left;
+	height: 150px;
+	width: 280px;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../Images/templatemo_home4_%E5%89%AF%E6%9C%AC.jpg);
+	float: left;
 }
 #frame .frame4 .aboutus {
-    margin-top: 15px;
-    height: 150px;
-    width: 280px;
-    float: left;
-    background-color: #339966;
+	margin-top: 15px;
+	height: 150px;
+	width: 280px;
+	float: left;
+	background-color: #339966;
 }
 #frame .frame4 .aboutus p {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 #frame .frame4 .contact {
-    float: left;
-    height: 150px;
-    width: 280px;
-    margin-top: 15px;
-    background-color: #006699;
+	float: left;
+	height: 150px;
+	width: 280px;
+	margin-top: 15px;
+	background-color: #006699;
 }
 #frame .frame4 .contact p {
-    margin-top: 20px;
+	margin-top: 20px;
 }

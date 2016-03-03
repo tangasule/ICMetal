@@ -8,14 +8,14 @@
 	float: left;
 	width: 280px;
 	height: 315px;
-	background-image: url(/static/Images/templatemo_contact1.jpg);
+	background-image: url(../Images/templatemo_contact1_%E5%89%AF%E6%9C%AC.jpg);
 }
 
 #frame .frame1 .contact_pic .pic .goback {
 	margin-top: 330px;
 }
 #frame .frame3 {
-	background-image: url(/static/Images/cb7f8e1d09566d1b7de525cc5922fa46.png);
+	width: 280px;
 
 }
 
@@ -45,7 +45,7 @@
 
 #frame .frame2 {
 	background-color: #CCC;
-	width: 420px;
+	width: 560px;
 }
 #frame .frame2 h1 {
 	padding: 0px;
@@ -57,10 +57,13 @@
 	margin-right: 0px;
 	margin-bottom: 20px;
 	margin-left: 30px;
+	text-align: center;
 }
 #frame .frame2 #form1 {
 	width: 420px;
 	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #frame .frame2 #form1 p {
 	font-size: 18px;
@@ -70,36 +73,37 @@
 	margin-right: 0px;
 }
 #frame .frame2 #form1 table {
-	font-size: 18px;
+	font-size: 20px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 45px;
 	line-height: 35px;
+	font-family: "Times New Roman", Times, serif;
 }
 
 #frame .frame2 #form1 table tr td #material {
-	width: 100px;
-	font-size: 18px;
+	width: 110px;
+	font-size: 20px;
 }
 #frame .frame2 #form1 table tr td #state {
-	font-size: 18px;
+	font-size: 20px;
 	width: 100px;
 }
 #frame .frame2 #form1 table tr td #total_strain {
-	font-size: 18px;
+	font-size: 20px;
 	width: 100px;
 }
 #frame .frame2 #form1 table tr td #speed {
-	font-size: 18px;
+	font-size: 20px;
 	width: 100px;
 }
 #frame .frame2 #form1 table tr td #cutoff_strain {
-	font-size: 18px;
+	font-size: 20px;
 	width: 100px;
 }
 #frame .frame2 #form1 table tr td #upload {
-	width: 50px;
-	font-size: 18px;
+	width: 110px;
+	font-size: 20px;
 }
 
 #frame .frame2 #form1 #submit {
@@ -108,6 +112,15 @@
 	height: 50px;
 	width: 80px;
 	margin-top: 25px;
-	margin-left: 280px;
+	margin-left: 70px;
+	font-size: 18px;
+}
+#frame .frame2 #form1 #help {
+	height: 50px;
+	width: 80px;
+	margin-top: 25px;
+	background-color: #666666;
+	color: #FFF;
+	margin-left: 100px;
 	font-size: 18px;
 }

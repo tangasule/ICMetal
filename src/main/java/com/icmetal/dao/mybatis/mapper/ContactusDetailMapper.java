@@ -1,6 +1,7 @@
 package com.icmetal.dao.mybatis.mapper;
 
 import com.icmetal.entities.mybatis.ContactusDetail;
+import org.springframework.stereotype.Repository;
 
 public interface ContactusDetailMapper {
     int deleteByPrimaryKey(Long id);

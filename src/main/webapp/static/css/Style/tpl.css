@@ -4,7 +4,7 @@
 /* CSS Document */
 
 body {
-	background-image: url(/static/Images/bg.jpg);
+	background-image: url(../Images/bg.jpg);
 	background-repeat: repeat-x;
 	background-color: #000;
 	margin: 0px;
@@ -12,7 +12,7 @@ body {
 }
 #frame {
 	height: 1024px;
-	width: 1280px;
+	width: 1160px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -105,8 +105,10 @@ body {
 #frame .frame2 p {
 	font-size: 16px;
 	line-height: 150%;
-	margin-right: 20px;
 	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
+	font-family: "Times New Roman", Times, serif;
 }
 #frame .frame2 h2 {
 	font-size: 24px;

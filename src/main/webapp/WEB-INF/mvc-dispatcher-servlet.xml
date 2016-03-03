@@ -16,7 +16,7 @@
 
     <mvc:annotation-driven/>
 
-    <context:component-scan base-package="com.icmetal.mvc"/>
+    <context:component-scan base-package="com.icmetal"/>
 
     <mvc:resources mapping="/static/**" location="/static/"/>
 
