@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.icmetal.dao.mybatis.mapper.FormabilityDetailMapper">
-  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.FormabilityDetail">
-    <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="material" jdbcType="VARCHAR" property="material" />
-    <result column="no_state" jdbcType="VARCHAR" property="noState" />
-    <result column="total_strain" jdbcType="VARCHAR" property="totalStrain" />
-    <result column="stamping_speed" jdbcType="VARCHAR" property="stampingSpeed" />
-    <result column="cut_off_strain" jdbcType="VARCHAR" property="cutOffStrain" />
-    <result column="upload" jdbcType="VARCHAR" property="upload" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.icmetal.dao.mybatis.mapper.FormabilityDetailMapper" >
+  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.FormabilityDetail" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="material" property="material" jdbcType="VARCHAR" />
+    <result column="no_state" property="noState" jdbcType="VARCHAR" />
+    <result column="total_strain" property="totalStrain" jdbcType="VARCHAR" />
+    <result column="stamping_speed" property="stampingSpeed" jdbcType="VARCHAR" />
+    <result column="cut_off_strain" property="cutOffStrain" jdbcType="VARCHAR" />
+    <result column="upload" property="upload" jdbcType="VARCHAR" />
   </resultMap>
-  <sql id="Base_Column_List">
+  <sql id="Base_Column_List" >
     id, material, no_state, total_strain, stamping_speed, cut_off_strain, upload
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
     from ic_formability
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from ic_formability
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
+  <insert id="insert" parameterType="com.icmetal.entities.mybatis.FormabilityDetail" >
     insert into ic_formability (id, material, no_state, 
       total_strain, stamping_speed, cut_off_strain, 
       upload)
@@ -31,306 +31,80 @@
       #{totalStrain,jdbcType=VARCHAR}, #{stampingSpeed,jdbcType=VARCHAR}, #{cutOffStrain,jdbcType=VARCHAR}, 
       #{upload,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
+  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail" >
     insert into ic_formability
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
         id,
       </if>
-      <if test="material != null">
+      <if test="material != null" >
         material,
       </if>
-      <if test="noState != null">
+      <if test="noState != null" >
         no_state,
       </if>
-      <if test="totalStrain != null">
+      <if test="totalStrain != null" >
         total_strain,
       </if>
-      <if test="stampingSpeed != null">
+      <if test="stampingSpeed != null" >
         stamping_speed,
       </if>
-      <if test="cutOffStrain != null">
+      <if test="cutOffStrain != null" >
         cut_off_strain,
       </if>
-      <if test="upload != null">
+      <if test="upload != null" >
         upload,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="material != null">
+      <if test="material != null" >
         #{material,jdbcType=VARCHAR},
       </if>
-      <if test="noState != null">
+      <if test="noState != null" >
         #{noState,jdbcType=VARCHAR},
       </if>
-      <if test="totalStrain != null">
+      <if test="totalStrain != null" >
         #{totalStrain,jdbcType=VARCHAR},
       </if>
-      <if test="stampingSpeed != null">
+      <if test="stampingSpeed != null" >
         #{stampingSpeed,jdbcType=VARCHAR},
       </if>
-      <if test="cutOffStrain != null">
+      <if test="cutOffStrain != null" >
         #{cutOffStrain,jdbcType=VARCHAR},
       </if>
-      <if test="upload != null">
+      <if test="upload != null" >
         #{upload,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
+  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail" >
     update ic_formability
-    <set>
-      <if test="material != null">
+    <set >
+      <if test="material != null" >
         material = #{material,jdbcType=VARCHAR},
       </if>
-      <if test="noState != null">
+      <if test="noState != null" >
         no_state = #{noState,jdbcType=VARCHAR},
       </if>
-      <if test="totalStrain != null">
+      <if test="totalStrain != null" >
         total_strain = #{totalStrain,jdbcType=VARCHAR},
       </if>
-      <if test="stampingSpeed != null">
+      <if test="stampingSpeed != null" >
         stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
       </if>
-      <if test="cutOffStrain != null">
+      <if test="cutOffStrain != null" >
         cut_off_strain = #{cutOffStrain,jdbcType=VARCHAR},
       </if>
-      <if test="upload != null">
+      <if test="upload != null" >
         upload = #{upload,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    update ic_formability
-    set material = #{material,jdbcType=VARCHAR},
-      no_state = #{noState,jdbcType=VARCHAR},
-      total_strain = #{totalStrain,jdbcType=VARCHAR},
-      stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
-      cut_off_strain = #{cutOffStrain,jdbcType=VARCHAR},
-      upload = #{upload,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.FormabilityDetail">
-    <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="material" jdbcType="VARCHAR" property="material" />
-    <result column="no_state" jdbcType="VARCHAR" property="noState" />
-    <result column="total_strain" jdbcType="VARCHAR" property="totalStrain" />
-    <result column="stamping_speed" jdbcType="VARCHAR" property="stampingSpeed" />
-    <result column="cut_off_strain" jdbcType="VARCHAR" property="cutOffStrain" />
-    <result column="upload" jdbcType="VARCHAR" property="upload" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, material, no_state, total_strain, stamping_speed, cut_off_strain, upload
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from ic_formability
-    where id = #{id,jdbcType=BIGINT}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from ic_formability
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
-  <insert id="insert" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    insert into ic_formability (id, material, no_state, 
-      total_strain, stamping_speed, cut_off_strain, 
-      upload)
-    values (#{id,jdbcType=BIGINT}, #{material,jdbcType=VARCHAR}, #{noState,jdbcType=VARCHAR}, 
-      #{totalStrain,jdbcType=VARCHAR}, #{stampingSpeed,jdbcType=VARCHAR}, #{cutOffStrain,jdbcType=VARCHAR}, 
-      #{upload,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    insert into ic_formability
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="material != null">
-        material,
-      </if>
-      <if test="noState != null">
-        no_state,
-      </if>
-      <if test="totalStrain != null">
-        total_strain,
-      </if>
-      <if test="stampingSpeed != null">
-        stamping_speed,
-      </if>
-      <if test="cutOffStrain != null">
-        cut_off_strain,
-      </if>
-      <if test="upload != null">
-        upload,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=BIGINT},
-      </if>
-      <if test="material != null">
-        #{material,jdbcType=VARCHAR},
-      </if>
-      <if test="noState != null">
-        #{noState,jdbcType=VARCHAR},
-      </if>
-      <if test="totalStrain != null">
-        #{totalStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="stampingSpeed != null">
-        #{stampingSpeed,jdbcType=VARCHAR},
-      </if>
-      <if test="cutOffStrain != null">
-        #{cutOffStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="upload != null">
-        #{upload,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    update ic_formability
-    <set>
-      <if test="material != null">
-        material = #{material,jdbcType=VARCHAR},
-      </if>
-      <if test="noState != null">
-        no_state = #{noState,jdbcType=VARCHAR},
-      </if>
-      <if test="totalStrain != null">
-        total_strain = #{totalStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="stampingSpeed != null">
-        stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
-      </if>
-      <if test="cutOffStrain != null">
-        cut_off_strain = #{cutOffStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="upload != null">
-        upload = #{upload,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    update ic_formability
-    set material = #{material,jdbcType=VARCHAR},
-      no_state = #{noState,jdbcType=VARCHAR},
-      total_strain = #{totalStrain,jdbcType=VARCHAR},
-      stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
-      cut_off_strain = #{cutOffStrain,jdbcType=VARCHAR},
-      upload = #{upload,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <resultMap id="BaseResultMap" type="com.icmetal.entities.mybatis.FormabilityDetail">
-    <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="material" jdbcType="VARCHAR" property="material" />
-    <result column="no_state" jdbcType="VARCHAR" property="noState" />
-    <result column="total_strain" jdbcType="VARCHAR" property="totalStrain" />
-    <result column="stamping_speed" jdbcType="VARCHAR" property="stampingSpeed" />
-    <result column="cut_off_strain" jdbcType="VARCHAR" property="cutOffStrain" />
-    <result column="upload" jdbcType="VARCHAR" property="upload" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, material, no_state, total_strain, stamping_speed, cut_off_strain, upload
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from ic_formability
-    where id = #{id,jdbcType=BIGINT}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from ic_formability
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
-  <insert id="insert" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    insert into ic_formability (id, material, no_state, 
-      total_strain, stamping_speed, cut_off_strain, 
-      upload)
-    values (#{id,jdbcType=BIGINT}, #{material,jdbcType=VARCHAR}, #{noState,jdbcType=VARCHAR}, 
-      #{totalStrain,jdbcType=VARCHAR}, #{stampingSpeed,jdbcType=VARCHAR}, #{cutOffStrain,jdbcType=VARCHAR}, 
-      #{upload,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    insert into ic_formability
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="material != null">
-        material,
-      </if>
-      <if test="noState != null">
-        no_state,
-      </if>
-      <if test="totalStrain != null">
-        total_strain,
-      </if>
-      <if test="stampingSpeed != null">
-        stamping_speed,
-      </if>
-      <if test="cutOffStrain != null">
-        cut_off_strain,
-      </if>
-      <if test="upload != null">
-        upload,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=BIGINT},
-      </if>
-      <if test="material != null">
-        #{material,jdbcType=VARCHAR},
-      </if>
-      <if test="noState != null">
-        #{noState,jdbcType=VARCHAR},
-      </if>
-      <if test="totalStrain != null">
-        #{totalStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="stampingSpeed != null">
-        #{stampingSpeed,jdbcType=VARCHAR},
-      </if>
-      <if test="cutOffStrain != null">
-        #{cutOffStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="upload != null">
-        #{upload,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
-    update ic_formability
-    <set>
-      <if test="material != null">
-        material = #{material,jdbcType=VARCHAR},
-      </if>
-      <if test="noState != null">
-        no_state = #{noState,jdbcType=VARCHAR},
-      </if>
-      <if test="totalStrain != null">
-        total_strain = #{totalStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="stampingSpeed != null">
-        stamping_speed = #{stampingSpeed,jdbcType=VARCHAR},
-      </if>
-      <if test="cutOffStrain != null">
-        cut_off_strain = #{cutOffStrain,jdbcType=VARCHAR},
-      </if>
-      <if test="upload != null">
-        upload = #{upload,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.FormabilityDetail">
+  <update id="updateByPrimaryKey" parameterType="com.icmetal.entities.mybatis.FormabilityDetail" >
     update ic_formability
     set material = #{material,jdbcType=VARCHAR},
       no_state = #{noState,jdbcType=VARCHAR},
