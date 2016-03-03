@@ -1,5 +1,6 @@
 # ICMetal
 ICMetal
+2016.3.3 提交spring配置
 
 2016.3.2 mapper dao层完成 
 
