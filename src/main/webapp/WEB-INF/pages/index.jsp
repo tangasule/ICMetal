@@ -11,12 +11,14 @@
     <meta http-equiv="Page-Enter" content="Revealtrans(Duration=6,Transition=15)" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>IC Metal Forming Group</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="static/css/Style/index.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
 <div id="frame">
-    <h1>The Metal Forming Group</h1>
+    <div><div class="left"><h1>The Metal Forming Group</h1></div><div class="right"><button class="btn btn-primary" type="button">SIGN IN</button></div></div>
     <div class="frame1">
         <div class="tailor">
             <p><a href="#">Tailor</a><br />
@@ -60,5 +62,36 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">LOGIN IN</h4>
+            </div>
+            <div class="modal-body">
+                <p> <input type="username" class="input-small" placeholder="Username"></p>
+                <p> <input type="password" class="input-small" placeholder="Password"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                <button type="button" class="btn btn-primary">OK</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-transition.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-modal.js"></script>
+<script>
+    $(function(){
+        $(".btn").click(function(){
+            $("#mymodal").modal("toggle");
+        });
+    });
+</script>
 </body>
 </html>

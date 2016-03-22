@@ -62,27 +62,6 @@ public class BaseController {
         return new ResponseEntity(data, status);
     }
 
-//    @ExceptionHandler
-//    public ModelAndView handleException(HttpServletRequest request, HttpServletResponse response, Exception ex) {
-//        LogUtil.error("请求发生错误", ex);
-//        response.setStatus(500);
-//        response.setCharacterEncoding("UTF-8");
-//        response.setContentType("application/json;charset=UTF-8");
-//        String msg;
-//        if (ex instanceof AutotestException) {
-//            msg = ((AutotestException) ex).getDetailMessage();
-//        } else {
-//            msg = "错误信息: " + ErrorCode.SYSTEM_EXCEPTION + "-系统异常";
-//        }
-//        try {
-//            PrintWriter writer = response.getWriter();
-//            writer.write(msg);
-//            writer.flush();
-//        } catch (IOException e) {
-//            // do nothing
-//        }
-//        return isAjax(request) ? null : new ModelAndView("error");
-//    }
 
     private boolean isAjax(HttpServletRequest request) {
         return request.getHeader("accept").contains("application/json") ||

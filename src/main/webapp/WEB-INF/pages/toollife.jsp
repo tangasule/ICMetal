@@ -64,16 +64,47 @@
                     <td width="250">Friction coefficient</td>
                     <td><input type="text" name="cutoff_strain" id="cutoff_strain" /></td>
                 </tr>
+                <form action="/upload" method="post" enctype="multipart/form-data">
                 <tr>
                     <td width="250">Upload  X, Y and Z value<br />
                         and contact pressure</td>
-                    <td><input name="upload" type="file" id="upload" size="1" maxlength="5" /></td>
+                    <td><input name="upload" type="file" id="upload" size="1" maxlength="5" />
+                        <p><input type="submit" value="上 传"></p>
+                    </td>
                 </tr>
+
+                </form>
             </table>
             <input type="submit" name="submit" id="submit" value="submit" />
         </form>
     </div>
+    <form action="/uploadfile" method="post" enctype="multipart/form-data">
+        <tr>
+            <td width="250">Upload  X, Y and Z value<br />
+                and contact pressure</td>
+            <td><input name="upload" type="file" id="upload" size="1" maxlength="5" />
+                <p><input type="submit" value="上 传"></p>
+            </td>
+        </tr>
+
+    </form>
     <div class="frame3"></div>
 </div>
+
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-transition.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-modal.js"></script>
+<script>
+    $(function(){
+        $(".btn").click(function(){
+            $("#mymodal").modal("toggle");
+        });
+    });
+
+
+
+</script>
+
 </body>
 </html>

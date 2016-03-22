@@ -5,6 +5,7 @@
 <title>Contact Us</title>
 <link href="static/css/Style/tpl.css" rel="stylesheet" type="text/css" />
 <link href="static/css/Style/contactus.css" rel="stylesheet" type="text/css" />
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -49,4 +50,6 @@
   </div>
   </div>
 </body>
+
+
 </html>
